@@ -9,7 +9,6 @@
     <script type="text/javascript">
     </script>
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -24,7 +23,6 @@
             border-bottom-color: black;
             border-bottom-width: 1px;
             background-color: antiquewhite;
-            
         }
 
         div.classRightDivBox {
@@ -44,17 +42,14 @@
             float:left;
         }
 
-         /* Style the tab */
         .tab {
             overflow: hidden;
-            border: 1px solid #ccc; /*antiquewhite*/
-            background-color: #f1f1f1; /*antiquewhite*/
+            border: 1px solid #ccc; 
+            background-color: #f1f1f1; 
             width:100%;
             float:left;
-            
         }
 
-        /* Style the buttons inside the tab */
         #idDivAboutButton {
             background-color: inherit;
             float: left;
@@ -67,7 +62,6 @@
             font-family:Calibri;
         }
 
-        /*style the selected registration tab button*/
         #idDivRegistrationButton {
             background-color: #ccc;
             float: left;
@@ -80,10 +74,7 @@
             font-family:Calibri;
         }
 
-        /* Style the tab content */
         .tabcontent {
-            /*display: none;*/
-            /*padding: 6px 12px;*/
             border: 1px solid #ccc;
             border-top: none;
             font-family:Calibri;
@@ -92,32 +83,18 @@
             float:left;
         }
 
-
-
-
-
         .classDivMainContent {
-        /**/
-        width:100%;
-        margin-top:50px;
-        float:left;
+            width:100%;
+            margin-top:50px;
+            float:left;
         }
         
-
-
-
-
-
-
-
-
         .classTableParticulars {
             width: 100%;
             border-collapse: collapse;
         }
 
         table.classTableParticulars td {
-            /*border: 1px solid black;*/
         }
 
         .inputTextBox {
@@ -210,8 +187,6 @@
             background-color: #e7e7e7;
         }
 
-
-
         .classDivFooter {
             border-top: 1px solid black;
             /*position: fixed;*/
@@ -237,7 +212,6 @@
         .classHeaderDiv {
             width:100%;
             float:left;
-        
         }
 
         .classLinkAbout {
@@ -277,7 +251,6 @@
             font-size:13px;
             color:black;
         }
-
     </style>
 
 </head>
@@ -286,42 +259,31 @@
         
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
         <div id="idCentreDivBox" class="classCentreDivBox">
                 <div id="idHeaderDiv" class="classHeaderDiv">
                     <label id="idLabelAppName" class="classLabelAppName">
                         <strong>Student Registration Application</strong>
                     </label>
-                    
-                    <%--<asp:LoginName ID="LoginName1" runat="server" />--%>
                     <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LogoutAction="RedirectToLoginPage" />
                     <label id="idLabelUserLoginName" class="classLaabelUserLoginName" >
                         [<asp:LoginName ID="idUserLoginName" runat="server"    />]
                     </label>
-
-
                     <br />
                     <label id="idLabelText" class="classLabelText">
                         BLUEBERRY UNIVERSITY OPEN-DAY EVENT
                     </label>
                 </div>
-            
-
                <div id="idDivMainContent" class="classDivMainContent">
                 <div class="tab">
                     <div id="idDivAboutButton" class="tablinks"><a id="idLinkAbout" class="classLinkAbout" href="About.aspx"><strong>About</strong></a></div>
                     <div id="idDivRegistrationButton" class="tablinks"><strong>Registration</strong></div>
                 </div>
-
-
-
                 <div id="Registration" class="tabcontent">
                 <h3>Registration</h3>
                 <p>
                     Kindly fill up the form to register for the upcoming open
                     day event.
                 </p>
-                
                     <table id="idTableParticulars" class="classTableParticulars">
                         <tr>
                             <td>
@@ -332,7 +294,6 @@
                             <td>
                                 <asp:TextBox ID="idNameTextBox" CssClass="inputTextBox" runat="server"></asp:TextBox>
                                 <br />
-                              
                                 <asp:RequiredFieldValidator ID="idNameTextBoxRequiredFieldValidator" runat="server" CssClass="classLabelMandatoryFieldMessage" ForeColor="Red" ControlToValidate="idNameTextBox" ErrorMessage="Name field is mandatory." Display="Dynamic" ></asp:RequiredFieldValidator>
                             </td>
                         </tr>
@@ -357,7 +318,6 @@
                         </tr>
                         <tr>
                             <td>
-                                
                                 <asp:TextBox ID="idContactNumberTextBox" CssClass="inputTextBox" runat="server"></asp:TextBox>
                                 <br />
                                 <asp:RequiredFieldValidator ID="idContactNumberTextBoxRequiredFieldValidator" runat="server" CssClass="classLabelMandatoryFieldMessage" ForeColor="Red" ControlToValidate="idContactNumberTextBox" ErrorMessage="Contact Number field is mandatory." Display="Dynamic" ></asp:RequiredFieldValidator>
@@ -371,7 +331,6 @@
                         </tr>
                         <tr>
                             <td>
-                                
                                 <asp:TextBox ID="idTextAreaAdress" TextMode="MultiLine" CssClass="classTextAreaAdress"  runat="server"></asp:TextBox>
                                 <br />
                                 <asp:RequiredFieldValidator ID="idTextAreaAddressRequiredFieldValidator" runat="server" CssClass="classLabelMandatoryFieldMessage" ForeColor="Red" ControlToValidate="idTextAreaAdress" ErrorMessage="Address field is mandatory." Display="Dynamic" ></asp:RequiredFieldValidator>
@@ -391,7 +350,6 @@
                                     <asp:ListItem Text="Thursday, 29-June">Thursday, 29-June</asp:ListItem>
                                     <asp:ListItem Text="Friday, 30-June">Friday, 30-June</asp:ListItem>
                                 </asp:DropDownList>
-
                                 <br />
                                 <asp:RequiredFieldValidator ID="idSelectOpenDayOptionRequiredFieldValidator" runat="server" CssClass="classLabelMandatoryFieldMessage" ForeColor="Red" ControlToValidate="idSelectOpenDayOption" ErrorMessage="This field is mandatory." Display="Dynamic" ></asp:RequiredFieldValidator>
                             </td>
@@ -416,17 +374,14 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                  
                                                     <asp:CheckBox ID="idCheckBoxEventManagementAndMarketing" runat="server" Text="Event Management and Marketing" />
                                                     <span class="checkmark"></span>
                                                 </label>
                                             </td>
-
                                         </tr>
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                   
                                                     <asp:CheckBox ID="idCheckBoxAccounting" runat="server"  Text="Accounting"  />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -435,7 +390,6 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                  
                                                     <asp:CheckBox ID="idCheckBoxFinance" runat="server" Text="Finance" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -444,7 +398,6 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                   
                                                     <asp:CheckBox ID="idCheckBoxMarketing" runat="server" Text="Marketing" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -453,7 +406,6 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                   
                                                     <asp:CheckBox ID="idCheckBoxBusinessAdministration" runat="server" Text="Business Administration" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -461,9 +413,6 @@
                                         </tr>
                                     </table>
                                 </div>
-
-
-                                <!-- -->
                                 <div id="idDivEngineeringCouseSelectHolder" class="classDivCouseSelectHolder">
                                     <table id="idTableEngieeringCouseSelectHolder" class="classTableCouseSelectHolder">
                                         <tr>
@@ -474,17 +423,14 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                  
                                                     <asp:CheckBox ID="idCheckBoxCivilEng" runat="server" Text="Civil Engineering" />
                                                     <span class="checkmark"></span>
                                                 </label>
                                             </td>
-
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label class="container">
-                                                   
+                                                <label class="container">                                                   
                                                     <asp:CheckBox ID="idCheckBoxMechanicalEng" runat="server" Text="Mechanical Engineering" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -492,8 +438,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label class="container">
-                                             
+                                                <label class="container">                                           
                                                     <asp:CheckBox ID="idCheckBoxElectricalEng" runat="server" Text="Electrical Engineering" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -501,8 +446,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label class="container">
-                                                  
+                                                <label class="container">                                                  
                                                     <asp:CheckBox ID="idCheckBoxElectronicEng" runat="server" Text="Electronic Engineering" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -527,17 +471,14 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                    
                                                     <asp:CheckBox ID="idCheckBoxFashionManagementAndCommmunication" runat="server" Text="Fashion Management and Commmunication" />
                                                     <span class="checkmark"></span>
                                                 </label>
                                             </td>
-
                                         </tr>
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                    
                                                     <asp:CheckBox ID="idCheckBoxGraphicDesign" runat="server" Text="Graphic Design" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -546,7 +487,6 @@
                                         <tr>
                                             <td>
                                                 <label class="container">
-                                                    
                                                     <asp:CheckBox ID="idCheckBoxIndoorArchitectrureAndDesign" runat="server" Text="Indoor Architectrure And Design" />
                                                     <span class="checkmark"></span>
                                                 </label>
@@ -559,10 +499,8 @@
                         <tr>
                             <td><br/><br/></td>
                         </tr>
-
                         <tr>
                             <td>
-                               
                                 <asp:Button ID="idSubmitButton" CssClass="classSubmitButton" runat="server" Text="Submit" OnClick="idSubmitButton_Click" />
                                 <asp:Button ID="idClearAllButton" CssClass="classClearAllButton" runat="server" Text="Clear All" OnClick="idClearAllButton_Click" CausesValidation="False" />
                                 <asp:LinqDataSource ID="InsertLinqDataSource" runat="server" ContextTypeName="Portfolio1_1.StudentRegistrationAppDataClassesDataContext" EnableInsert="True" EnableUpdate="True" EntityTypeName="" TableName="StudentRegistationAppTables">
@@ -587,38 +525,19 @@
                             </td>
                         </tr>
                     </table>
-                
-                    <!-- -->
                     </div>
                    </div>
-
-            <%--<div id="idDivAddSpace" class="classDivMakeSpace">
-                <br/> <br>
-            </div>--%>
-                
-            <div id="idDivFooter" class="classDivFooter">
-                <footer>
-                    <label>
-                        <!--<h6>&copy; Student Registration Application</h6>-->
-                        <i><strong>&copy; Student Registration Application</strong></i>
-                    </label>
-                </footer>
+                    <div id="idDivFooter" class="classDivFooter">
+                    <footer>
+                        <label>
+                            <!--<h6>&copy; Student Registration Application</h6>-->
+                            <i><strong>&copy; Student Registration Application</strong></i>
+                        </label>
+                    </footer>
+                </div>   
             </div>
-        
-            </div>
-        
-                
-
-
-
-
-
-
-        <!--</div>-->
-
         <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
     </form>
 </body>
 </html>
