@@ -530,7 +530,6 @@
                     <div id="idDivFooter" class="classDivFooter">
                     <footer>
                         <label>
-                            <!--<h6>&copy; Student Registration Application</h6>-->
                             <i><strong>&copy; Student Registration Application</strong></i>
                         </label>
                     </footer>
