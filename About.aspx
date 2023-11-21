@@ -9,7 +9,6 @@
     <script type="text/javascript">
     </script> 
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -24,7 +23,6 @@
             border-bottom-color: black;
             border-bottom-width: 1px;
             background-color: antiquewhite;
-            
         }
 
         div.classRightDivBox {
@@ -47,7 +45,6 @@
         .classHeaderDiv {
             width:100%;
             float:left;
-        
         }
 
         .classDivMainContent {
@@ -56,7 +53,6 @@
             float:left;
         }
 
-        /*style registration tab button*/
         #idDivRegistrationButton {
             background-color: inherit;
             float: left;
@@ -67,10 +63,8 @@
             transition: 0.3s;
             font-size: 16px;
             font-family:Calibri;
-        
         }
 
-        /*style selected about tab option*/
         #idDivAboutButton {
             background-color: #ccc;
             float: left;
@@ -91,7 +85,6 @@
         .classLinkRegistration {
             color:black;
             text-decoration:none;
-        
         }
 
         .classDivFooter {
@@ -106,23 +99,17 @@
             font-size: 11px;
             width:inherit;
             float:left;
-            /*margin-top:50px;*/
         }
 
-         /* Style the tab */
         .tab {
             overflow: hidden;
-            border: 1px solid #ccc; /*antiquewhite*/
-            background-color: #f1f1f1; /*antiquewhite*/
+            border: 1px solid #ccc; 
+            background-color: #f1f1f1; 
             width:100%;
             float:left;
-            
         }
 
-        /* Style the tab content */
         .tabcontent {
-            /*display: none;*/
-            /*padding: 6px 12px;*/
             border: 1px solid #ccc;
             border-top: none;
             font-family:Calibri;
@@ -144,41 +131,31 @@
             font-size:13px;
             color:black;
         }
-
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
         <div id="idCentreDivBox" class="classCentreDivBox">
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <strong>Student Registration Application</strong>
                 </label>
-
                 <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LogoutAction="RedirectToLoginPage" />
                 <label id="idLabelUserLoginName" class="classLaabelUserLoginName" >
                     [<asp:LoginName ID="idUserLoginName" runat="server"    />]
                 </label>
-
                 <br />
                 <label id="idLabelText" class="classLabelText">
                     BLUEBERRY UNIVERSITY OPEN-DAY EVENT
                 </label>
-
             </div>
-
-
             <div id="idDivMainContent" class="classDivMainContent">
                 <div class="tab">
                     <div id="idDivAboutButton" class="tablinks"><a id="idLinkAbout" class="classLinkAbout" href="About.aspx"><strong>About</strong></a></div>
                     <div id="idDivRegistrationButton" class="tablinks"><a id="idLinkRegistration" class="classLinkRegistration" href="Registration.aspx"><strong>Registration</strong></a></div>
                 </div>
-
-
                 <div id="idDivAbout" class="tabcontent">
                     <h3>About</h3>
                     <p>
@@ -190,9 +167,7 @@
                         A software development portfolio by Joel Goh Chong Hui.
                     </p>
                 </div>
-
             </div>
-
             <div id="idDivFooter" class="classDivFooter">
                 <footer>
                     <label>
@@ -200,19 +175,9 @@
                     </label>
                 </footer>
             </div>
-        
-
-
-            
-
-
-
-
         </div>
-
          <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
     </form>
 </body>
 </html>
