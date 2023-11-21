@@ -42,15 +42,10 @@
             font-size: 18px;
         }
 
-
         div.classDivLoginTableContent {
             width: 100%;
-            /*border:1px solid black;*/
             margin-top:50px;
-            
         }
-
-        
 
         .classLoginButton {
         background-color: #4CAF50;
@@ -81,9 +76,6 @@
         }
 
         .classInstructionTextStyle {
-            /*font-family:Calibri;
-            font-size:16px;*/
-            
         }
 
         .classASPLogin {
@@ -101,15 +93,10 @@
         table.classTableLoginTableContent {
             width: 100%;
             border-collapse: collapse;
-        
         }
 
-        
-        
-
          div.classDivAdditionalDetails {
-            width: 100%; /*100%*/ 
-             /*border:1px solid black; */
+            width: 100%; 
             float: left;
             margin-top: 20px;
         }
@@ -123,7 +110,6 @@
             margin-left: 20px;
         }
 
-
         .classDivFooter {
             border-top: 1px solid black;
             position: fixed;
@@ -134,22 +120,14 @@
             background-color: aliceblue;
             font-family: Calibri;
             font-size: 11px;
-            /*text-align:start;*/
-            /*font-size:*/
         }
-
-       
-
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
         <div id="idCentreDivBox" class="classCentreDivBox">
-           
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <strong>Student Registration Application</strong>
@@ -158,10 +136,7 @@
                 <label id="idLabelText" class="classLabelText">
                     BLUEBERRY UNIVERSITY OPEN-DAY EVENT
                 </label>
-            </div>
-            
-        
-            
+            </div>    
             <div id="idDivLoginTableContent" class="classDivLoginTableContent">
                 <table id="idTableLoginTableContent" class="classTableLoginTableContent" >
                     <tr>
@@ -179,10 +154,6 @@
                     </tr>
                 </table>
             </div>
-
-
-
-
             <div id="idDivAdditionalDetails" class="classDivAdditionalDetails" >
                 <details id="idDetailsTagAdditionalDetail" class="classDetailsTagAdditionalDetail" >
                     <summary><strong><u>To login as user:</u></strong></summary>
@@ -192,7 +163,6 @@
                     </div>
                 </details>
             <br />
-
             <details class="classDetailsTagAdditionalDetail">
                 <summary><strong><u>To login as admin:</u></strong></summary>
                 <div class="classDivAdditionalDetails2" >
@@ -201,8 +171,6 @@
                 </div>
             </details>
         </div>
-                
-
         <div id="idDivFooter" class="classDivFooter">
                 <footer>
                     <label>
@@ -211,27 +179,9 @@
                     </label>
                 </footer>
             </div>
-
-
-
-
-
-
-
         </div>
-
         <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
-
-
-
-
-
-
-
-
-
     </form>
 </body>
 </html>
