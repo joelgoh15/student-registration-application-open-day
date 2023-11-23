@@ -9,7 +9,6 @@
     <script type="text/javascript">
     </script> 
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -24,7 +23,6 @@
             border-bottom-color: black;
             border-bottom-width: 1px;
             background-color: antiquewhite;
-            
         }
 
         div.classRightDivBox {
@@ -52,7 +50,6 @@
         div.classDivMainContent {
             width:100%;
             float:left;
-            /*border:1px solid black;*/
             margin-top:50px;
             font-family:Calibri;
             font-size:14px;
@@ -70,22 +67,15 @@
             font-size: 11px;
             width:inherit;
             float:left;
-            /*margin-top:50px;*/
         }
 
         .classDivSpace {
             width:inherit;
-            /*border:1px solid black;*/
-            /*float:left;*/
         }
 
         .classDivLinkToRegistrationForm {
             width:inherit;
-            /*border:1px solid black;*/
             margin-bottom:100px;
-            /*float:left;*/
-            /*margin-top:20px;*/
-           
         }
 
         .CssClassHyperLinkBackToRegistrationForm {
@@ -112,28 +102,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
         <div id="idCentreDivBox" class="classCentreDivBox">
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <strong>Student Registration Application</strong>
                 </label>
-
                 <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LogoutAction="RedirectToLoginPage" />
                 <label id="idLabelUserLoginName" class="classLaabelUserLoginName" >
                     [<asp:LoginName ID="idUserLoginName" runat="server"    />]
                 </label>
-
-
                 <br />
                 <label id="idLabelText" class="classLabelText">
                     BLUEBERRY UNIVERSITY OPEN-DAY EVENT
                 </label>
             </div>
-        
             <div id="idDivMainContent" class="classDivMainContent">
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="False" AutoGenerateColumns="False" DataKeyNames="Id" 
                      BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" 
@@ -144,9 +128,6 @@
                         <asp:BoundField DataField="Id" ItemStyle-Width="12%" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" >
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:BoundField>
-
-
-                        
                         <asp:TemplateField HeaderText="Name" ItemStyle-Width="12%" SortExpression="Name" >
                             <ItemTemplate>
                                 <asp:Label ID="lblName" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
@@ -156,8 +137,6 @@
                             </EditItemTemplate>       
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:TemplateField>
-
-                       
                         <asp:TemplateField HeaderText="Email" ItemStyle-Width="12%" SortExpression="Email">
                             <ItemTemplate>
                                  <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
@@ -167,8 +146,6 @@
                             </EditItemTemplate>       
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:TemplateField>
-
-                      
                         <asp:TemplateField HeaderText="ContactNo" ItemStyle-Width="12%" SortExpression="ContactNo">
                             <ItemTemplate>
                                  <asp:Label ID="lblContactNo" runat="server" Text='<%# Eval("ContactNo") %>'></asp:Label>
@@ -178,8 +155,6 @@
                             </EditItemTemplate>       
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:TemplateField>
-
-                       
                         <asp:TemplateField HeaderText="Address" ItemStyle-Width="12%" SortExpression="Address">
                             <ItemTemplate>
                                  <asp:Label ID="lblAddress" runat="server" Text='<%# Eval("Address") %>'></asp:Label>
@@ -189,8 +164,6 @@
                             </EditItemTemplate>       
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:TemplateField>
-
-                       
                         <asp:TemplateField HeaderText="AttendDay" ItemStyle-Width="12%" SortExpression="AttendDay">
                             <ItemTemplate>
                                  <asp:Label ID="lblAttendDay" runat="server" Text='<%# Eval("AttendDay") %>'></asp:Label>
@@ -200,8 +173,6 @@
                             </EditItemTemplate>       
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:TemplateField>
-
-                     
                         <asp:TemplateField HeaderText="Courses" ItemStyle-Width="12%" SortExpression="Courses">
                             <ItemTemplate>
                                  <asp:Label ID="lblCourses" runat="server" Text='<%# Eval("Courses") %>'></asp:Label>
@@ -211,7 +182,6 @@
                             </EditItemTemplate>       
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:TemplateField>
-
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ItemStyle-Width="12%"  >
                             <ItemStyle Width="12%"></ItemStyle>
                         </asp:CommandField>
@@ -225,21 +195,14 @@
                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
                     <SortedDescendingHeaderStyle BackColor="#242121" />
                 </asp:GridView>
-
-                <%--<br/><br/>--%>
-
-
                 <div id="idDivSpace" class="classDivSpace">
                     <br/><br/>
                 </div>
-
                 <div id="idDivLinkToRegistrationForm" class="classDivLinkToRegistrationForm">
                     <br/><br/>
                     <asp:HyperLink ID="idHyperLinkBackToRegistrationForm" CssClass="CssClassHyperLinkBackToRegistrationForm" Font-Italic="true" Font-Underline="true" NavigateUrl="~/Registration.aspx"  runat="server">Back to student registration form</asp:HyperLink>
                 </div>
-
             </div>
-
             <div id="idDivFooter" class="classDivFooter">
                 <footer>
                     <label>
@@ -247,19 +210,9 @@
                     </label>
                 </footer>
             </div>
-        
-
-
         </div>
-
-
-
-
         <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
-
-
     </form>
 </body>
 </html>
