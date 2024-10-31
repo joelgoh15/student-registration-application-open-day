@@ -1,7 +1,7 @@
 # Student Registration Application (Open Day)
 A web application that handles the registration of students for a university open-day event.
 
-# Technical Details
+## Technical Details
 1. Technology stacks and approach used:
 <ul>
   <ul>
@@ -18,7 +18,7 @@ A web application that handles the registration of students for a university ope
   </ul>
 </ul>
 
-# Project Presentation
+## Project Presentation
 
 https://github.com/user-attachments/assets/68cc7144-df51-4e55-8477-74c6f6ee468f
 
