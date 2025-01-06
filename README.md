@@ -20,5 +20,5 @@ A web application that handles the registration of students for a university ope
 
 ## Project Presentation
 
-https://github.com/user-attachments/assets/68cc7144-df51-4e55-8477-74c6f6ee468f
+https://github.com/user-attachments/assets/2071b589-9248-4d06-a9ad-cefd5a1b5dc0
 
